@@ -116,7 +116,7 @@
                     <img src="https://i.pravatar.cc/80?img=33" alt="Attendee" class="w-full h-full object-cover">
                 </div>
                 <div class="w-10 h-10 rounded-full border-2 border-pmblue bg-white/10 backdrop-blur-sm flex items-center justify-center text-white text-xs font-medium">
-                    +370
+                    +420
                 </div>
             </div>
             
@@ -193,15 +193,9 @@
         // Countdown Timer
         function updateCountdown() {
             const now = new Date();
-            const nextThursday = new Date();
-            nextThursday.setDate(now.getDate() + ((4 + 7 - now.getDay()) % 7));
-            nextThursday.setHours(18, 0, 0, 0);
+            const countdownDate = new Date("2025-04-09T18:00:00").getTime();
             
-            if (now > nextThursday) {
-                nextThursday.setDate(nextThursday.getDate() + 7);
-            }
-            
-            const diff = nextThursday - now;
+            const diff = countdownDate - now;
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
             const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));

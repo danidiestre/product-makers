@@ -128,7 +128,7 @@
                     class="bg-white/10 backdrop-blur-md text-white text-center py-2.5 md:py-4 px-6 rounded-lg font-semibold text-base md:text-lg hover:bg-white/20 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg relative group border border-white/20"
                 >
                     <div class="flex flex-col items-center gap-1">
-                        <span>Join our First Live Event</span>
+                        <span>Every Tuesday at 18:00 (CEST)</span>
                         <div id="countdown" class="text-sm md:text-base opacity-80 font-mono"></div>
                     </div>
                 </a>
@@ -193,7 +193,7 @@
         // Countdown Timer
         function updateCountdown() {
             const now = new Date();
-            const countdownDate = new Date("2025-04-09T18:00:00").getTime();
+            const countdownDate = new Date("2025-04-16T18:00:00").getTime();
             
             const diff = countdownDate - now;
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));

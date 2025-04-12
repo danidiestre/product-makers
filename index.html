@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <!-- GitHub Pages Rebuild Trigger - Force Rebuild -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Primary Meta Tags -->
     <title>Product Makers Community - From Zero to Launch</title>
     <meta name="title" content="Product Makers Community - From Zero to Launch">
-    <meta name="description" content="Welcome to Product Makers — the channel for designers, developers, founders, and doers who build digital products from zero to launch. Learn, build, and connect with a community of modern makers turning ideas into reality.">
-    <meta name="keywords" content="product design, development, founders, digital products, MVP, product creation, UI design, product makers">
-    
+    <meta name="description"
+        content="Welcome to Product Makers — the channel for designers, developers, founders, and doers who build digital products from zero to launch. Learn, build, and connect with a community of modern makers turning ideas into reality.">
+    <meta name="keywords"
+        content="product design, development, founders, digital products, MVP, product creation, UI design, product makers">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://productmakers.ai/">
     <meta property="og:title" content="Product Makers Community - From Zero to Launch">
-    <meta property="og:description" content="Welcome to Product Makers — the channel for designers, developers, founders, and doers who build digital products from zero to launch. Learn, build, and connect with a community of modern makers turning ideas into reality.">
+    <meta property="og:description"
+        content="Welcome to Product Makers — the channel for designers, developers, founders, and doers who build digital products from zero to launch. Learn, build, and connect with a community of modern makers turning ideas into reality.">
     <meta property="og:image" content="https://productmakers.ai/assets/socialgraph.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://productmakers.ai/">
     <meta property="twitter:title" content="Product Makers Community - From Zero to Launch">
-    <meta property="twitter:description" content="Welcome to Product Makers — the channel for designers, developers, founders, and doers who build digital products from zero to launch. Learn, build, and connect with a community of modern makers turning ideas into reality.">
+    <meta property="twitter:description"
+        content="Welcome to Product Makers — the channel for designers, developers, founders, and doers who build digital products from zero to launch. Learn, build, and connect with a community of modern makers turning ideas into reality.">
     <meta property="twitter:image" content="https://productmakers.ai/assets/socialgraph.png">
 
     <!-- Favicon -->
@@ -31,43 +36,47 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#000000',
-                        secondary: '#ffd700',
-                        background: 'white',
-                        foreground: '#0000ff',
-                        discord: '#5865F2',
-                        pmblue: '#002AFC',
-                    },
-                    fontFamily: {
-                        manrope: ['Manrope', 'sans-serif'],
-                    },
-                }
-            }
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-primary: #000000;
+          --color-secondary: #ffd700;
+          --color-background: #ffffff;
+          --color-foreground: #0000ff;
+          --color-discord: #5865F2;
+          --color-youtube: #FF0033;
+          --color-pmblue: #002AFC;
+          --font-manrope: "Manrope", "sans-serif";
         }
-    </script>
+    </style>
     <style>
         * {
             font-family: 'Manrope', sans-serif;
         }
-        html, body {
+
+        html,
+        body {
             height: 100%;
         }
+
         .countdown {
             font-variant-numeric: tabular-nums;
-            font-weight: 500;
         }
+
         @keyframes twinkle {
-            0%, 100% { opacity: 0.2; }
-            50% { opacity: 0.6; }
+
+            0%,
+            100% {
+                opacity: 0.2;
+            }
+
+            50% {
+                opacity: 0.6;
+            }
         }
+
         .stars {
             position: absolute;
             top: 0;
@@ -77,6 +86,7 @@
             pointer-events: none;
             overflow: hidden;
         }
+
         .star {
             position: absolute;
             background: white;
@@ -87,68 +97,94 @@
         }
     </style>
 </head>
+
 <body class="bg-background font-manrope">
-    <div class="h-screen bg-pmblue relative overflow-hidden">
+    <div class="min-h-dvh bg-pmblue relative">
         <div id="stars" class="stars"></div>
-        <div class="container mx-auto px-4 h-full flex flex-col items-center justify-center relative">
+        <div
+            class="container mx-auto px-6 py-16 min-h-dvh flex flex-col items-center justify-start md:justify-center relative">
+
             <!-- Logo Section -->
-            <div class="relative flex items-center justify-center mb-4">
-                <a 
-                    href="https://lu.ma/ghwygo3b" 
-                    target="_blank"
-                    class="block transform transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02]"
-                >
-                    <div class="w-[70vw] max-w-[320px] md:w-64 bg-pmblue rounded-3xl shadow-xl p-8 md:p-8 transition-all duration-300 hover:shadow-2xl border border-white/5">
-                        <img src="/assets/logo_productmakers.svg" alt="Product Makers" class="w-full">
-                    </div>
+            <div class="relative flex flex-col items-center justify-center max-w-screen-lg text-center mb-8">
+                <a href="https://productmakers.ai">
+                    <img src="assets/logo_productmakers.svg" alt="Product Makers"
+                        class="w-[70vw] max-w-[120px] mb-8 md:mb-12">
                 </a>
+                <h1 class="text-3xl lg:text-6xl font-bold text-white mb-8 text-balance">
+                    Learn, build, and connect with a community of modern makers turning ideas into reality.
+                </h1>
+                <p class="text-base lg:text-xl font-medium text-white/80 text-balance">
+                    Product Makers is the channel for designers, developers, founders, and doers who build digital
+                    products from zero to launch.
+                </p>
             </div>
 
-            <!-- Attendees Section -->
-            <div class="flex items-center justify-center mb-4 -space-x-3 pt-4">
-                <div class="w-10 h-10 rounded-full border-2 border-pmblue overflow-hidden">
-                    <img src="https://i.pravatar.cc/80?img=60" alt="Attendee" class="w-full h-full object-cover">
-                </div>
-                <div class="w-10 h-10 rounded-full border-2 border-pmblue overflow-hidden">
-                    <img src="https://i.pravatar.cc/80?img=12" alt="Attendee" class="w-full h-full object-cover">
-                </div>
-                <div class="w-10 h-10 rounded-full border-2 border-pmblue overflow-hidden">
-                    <img src="https://i.pravatar.cc/80?img=33" alt="Attendee" class="w-full h-full object-cover">
-                </div>
-                <div class="w-10 h-10 rounded-full border-2 border-pmblue bg-white/10 backdrop-blur-sm flex items-center justify-center text-white text-xs font-medium">
-                    +420
-                </div>
-            </div>
-            
             <!-- Buttons Section -->
-            <div class="flex flex-col gap-3 w-full max-w-sm">
-                <a 
-                    href="https://lu.ma/ghwygo3b" 
-                    target="_blank"
-                    class="bg-white/10 backdrop-blur-md text-white text-center py-2.5 md:py-4 px-6 rounded-lg font-semibold text-base md:text-lg hover:bg-white/20 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg relative group border border-white/20"
-                >
-                    <div class="flex flex-col items-center gap-1">
-                        <span>Every Tuesday at 18:00 (CEST)</span>
-                        <div id="countdown" class="text-sm md:text-base opacity-80 font-mono"></div>
+            <div
+                class="w-full flex flex-col lg:flex-row items-center gap-4 max-w-sm md:max-w-md lg:max-w-screen-md mb-12">
+                <a href="https://www.youtube.com/@productmakers" target="_blank"
+                    class="w-full bg-white text-youtube text-center py-2.5 lg:py-4 px-6 rounded-lg font-bold text-base flex items-center justify-center hover:bg-youtube hover:text-white overflow-hidden relative transition-all duration-200 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="flex-shrink-0 mr-4"
+                        fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                            d="M234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-73.74,65-40,28A8,8,0,0,1,108,156V100a8,8,0,0,1,12.59-6.55l40,28a8,8,0,0,1,0,13.1Z">
+                        </path>
+                    </svg>
+                    <span>Subscribe to our YouTube channel</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"
+                        class="flex-shrink-0 absolute -left-[64px] opacity-10 group-hover:opacity-20 group-hover:translate-x-1 transform ease-in-out transition-all duration-200"
+                        fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                            d="M234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-73.74,65-40,28A8,8,0,0,1,108,156V100a8,8,0,0,1,12.59-6.55l40,28a8,8,0,0,1,0,13.1Z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="http://discord.gg/PnBJNwDW77" target="_blank"
+                    class="w-full bg-white text-discord text-center py-2.5 lg:py-4 px-6 rounded-lg font-bold text-base flex items-center justify-center hover:bg-discord hover:text-white overflow-hidden relative transition-all duration-200 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="flex-shrink-0 mr-4"
+                        fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                            d="M247.51,174.39,218,58a16.08,16.08,0,0,0-13-11.88l-36.06-5.92a16.22,16.22,0,0,0-18.26,11.88l-.21.85a4,4,0,0,0,3.27,4.93,155.62,155.62,0,0,1,24.41,5.62,8.2,8.2,0,0,1,5.62,9.7,8,8,0,0,1-10.19,5.64,155.4,155.4,0,0,0-90.8-.1,8.22,8.22,0,0,1-10.28-4.81,8,8,0,0,1,5.08-10.33,156.85,156.85,0,0,1,24.72-5.72,4,4,0,0,0,3.27-4.93l-.21-.85A16.21,16.21,0,0,0,87.08,40.21L51,46.13A16.08,16.08,0,0,0,38,58L8.49,174.39a15.94,15.94,0,0,0,9.06,18.51l67,29.71a16.17,16.17,0,0,0,21.71-9.1l3.49-9.45a4,4,0,0,0-3.27-5.35,158.13,158.13,0,0,1-28.63-6.2,8.2,8.2,0,0,1-5.61-9.67,8,8,0,0,1,10.2-5.66,155.59,155.59,0,0,0,91.12,0,8,8,0,0,1,10.19,5.65,8.19,8.19,0,0,1-5.61,9.68,157.84,157.84,0,0,1-28.62,6.2,4,4,0,0,0-3.27,5.35l3.49,9.45a16.18,16.18,0,0,0,21.71,9.1l67-29.71A15.94,15.94,0,0,0,247.51,174.39ZM92,152a12,12,0,1,1,12-12A12,12,0,0,1,92,152Zm72,0a12,12,0,1,1,12-12A12,12,0,0,1,164,152Z">
+                        </path>
+                    </svg>
+                    <span>Join our Discord community server</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"
+                        class="flex-shrink-0 absolute -left-[64px] opacity-10 group-hover:opacity-10 group-hover:translate-x-1 transform ease-in-out transition-all duration-200"
+                        fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                            d="M247.51,174.39,218,58a16.08,16.08,0,0,0-13-11.88l-36.06-5.92a16.22,16.22,0,0,0-18.26,11.88l-.21.85a4,4,0,0,0,3.27,4.93,155.62,155.62,0,0,1,24.41,5.62,8.2,8.2,0,0,1,5.62,9.7,8,8,0,0,1-10.19,5.64,155.4,155.4,0,0,0-90.8-.1,8.22,8.22,0,0,1-10.28-4.81,8,8,0,0,1,5.08-10.33,156.85,156.85,0,0,1,24.72-5.72,4,4,0,0,0,3.27-4.93l-.21-.85A16.21,16.21,0,0,0,87.08,40.21L51,46.13A16.08,16.08,0,0,0,38,58L8.49,174.39a15.94,15.94,0,0,0,9.06,18.51l67,29.71a16.17,16.17,0,0,0,21.71-9.1l3.49-9.45a4,4,0,0,0-3.27-5.35,158.13,158.13,0,0,1-28.63-6.2,8.2,8.2,0,0,1-5.61-9.67,8,8,0,0,1,10.2-5.66,155.59,155.59,0,0,0,91.12,0,8,8,0,0,1,10.19,5.65,8.19,8.19,0,0,1-5.61,9.68,157.84,157.84,0,0,1-28.62,6.2,4,4,0,0,0-3.27,5.35l3.49,9.45a16.18,16.18,0,0,0,21.71,9.1l67-29.71A15.94,15.94,0,0,0,247.51,174.39ZM92,152a12,12,0,1,1,12-12A12,12,0,0,1,92,152Zm72,0a12,12,0,1,1,12-12A12,12,0,0,1,164,152Z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Events Section -->
+            <div class="flex flex-col items-center gap-3 w-full max-w-[290px]">
+
+                <div class="flex flex-col items-start gap-2">
+                    <div class="font-semibold text-sm md:text-xl text-white">Every Tuesday at 18:00 <span
+                            class="text-xs md:text-base">(CEST)</span></div>
+                    <div id="countdown" class="font-regular text-4xl md:text-5xl text-white font-mono">
                     </div>
-                </a>
-
-                <div class="w-full h-px bg-white/10 my-2"></div>
-
-                <a 
-                    href="https://www.youtube.com/@productmakers" 
-                    target="_blank"
-                    class="bg-red-600 text-background text-center py-2.5 md:py-4 px-6 rounded-lg font-semibold text-base md:text-lg hover:bg-red-700 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
-                >
-                    Subscribe to our YouTube Channel
-                </a>
-                <a 
-                    href="http://discord.gg/PnBJNwDW77" 
-                    target="_blank"
-                    class="bg-discord text-background text-center py-2.5 md:py-4 px-6 rounded-lg font-semibold text-base md:text-lg hover:bg-opacity-90 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
-                >
-                    Join our Discord Community
-                </a>
+                </div>
+                <div class="flex items-center justify-center mb-4 -space-x-3 pt-4">
+                    <div class="w-12 h-12 rounded-full border-2 border-pmblue overflow-hidden">
+                        <img src="https://i.pravatar.cc/80?img=11" alt="Attendee" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-12 h-12 rounded-full border-2 border-pmblue overflow-hidden">
+                        <img src="https://i.pravatar.cc/80?img=21" alt="Attendee" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-12 h-12 rounded-full border-2 border-pmblue overflow-hidden">
+                        <img src="https://i.pravatar.cc/80?img=8" alt="Attendee" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-12 h-12 rounded-full border-2 border-pmblue overflow-hidden">
+                        <img src="https://i.pravatar.cc/80?img=27" alt="Attendee" class="w-full h-full object-cover">
+                    </div>
+                    <div
+                        class="w-12 h-12 rounded-full border-2 border-pmblue bg-white/10 backdrop-blur-sm flex items-center justify-center text-white text-xs font-medium">
+                        +420
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -158,22 +194,22 @@
         function createStars() {
             const starsContainer = document.getElementById('stars');
             const numberOfStars = 100;
-            
+
             for (let i = 0; i < numberOfStars; i++) {
                 const star = document.createElement('div');
                 star.className = 'star';
-                
+
                 // Random position
                 const x = Math.random() * 100;
                 const y = Math.random() * 100;
-                
+
                 // Random size (very small)
                 const size = Math.random() * 2 + 1;
-                
+
                 // Random animation duration and delay
                 const duration = (Math.random() * 3 + 2) + 's';
                 const delay = (Math.random() * 3) + 's';
-                
+
                 star.style.cssText = `
                     left: ${x}%;
                     top: ${y}%;
@@ -182,7 +218,7 @@
                     --duration: ${duration};
                     --delay: ${delay};
                 `;
-                
+
                 starsContainer.appendChild(star);
             }
         }
@@ -190,36 +226,45 @@
         // Initialize stars
         createStars();
 
+        function getNextTuesdayAtSix() {
+            const now = new Date();
+            const result = new Date(now);
+
+            // Get current day (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+            const day = now.getDay();
+            // Calculate how many days to add to get to next Tuesday (2)
+            const daysToAdd = (9 - day) % 7 || 7; // If today is Tuesday and it's past 18:00, still go to next Tuesday
+
+            result.setDate(now.getDate() + daysToAdd);
+            result.setHours(18, 0, 0, 0);
+
+            // If it's already Tuesday and past 18:00, move to next week
+            if (day === 2 && now.getHours() >= 18) {
+                result.setDate(result.getDate() + 7);
+            }
+
+            return result.getTime();
+        }
+
         // Countdown Timer
         function updateCountdown() {
             const now = new Date();
-            const countdownDate = new Date("2025-04-16T18:00:00").getTime();
-            
+            const countdownDate = getNextTuesdayAtSix();
+
             const diff = countdownDate - now;
             const days = Math.floor(diff / (1000 * 60 * 60 * 24));
             const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
-            document.getElementById('countdown').textContent = 
+
+            document.getElementById('countdown').textContent =
                 `${days.toString().padStart(2, '0')}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
         }
 
         updateCountdown();
         setInterval(updateCountdown, 1000);
 
-        // Dark mode code
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.documentElement.classList.add('dark');
-        }
-
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-            if (e.matches) {
-                document.documentElement.classList.add('dark');
-            } else {
-                document.documentElement.classList.remove('dark');
-            }
-        });
     </script>
 </body>
+
 </html>

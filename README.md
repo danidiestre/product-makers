@@ -1,6 +1,6 @@
 # Product Makers Community Website
 
-A simple, modern landing page for the Product Makers community featuring links to our YouTube channel, Discord community, and event registration.
+A simple, modern landing page for the Product Makers community featuring links to our YouTube channel and Discord community.
 
 ## Features
 
@@ -8,11 +8,9 @@ A simple, modern landing page for the Product Makers community featuring links t
 - Responsive layout for all devices
 - Direct links to:
   - YouTube Channel
-  - Live Events (via Lu.ma)
   - Discord Community
 - Mobile-friendly interface
 - Custom favicon and app icons
-- Dark mode support
 
 ## Technologies Used
 
